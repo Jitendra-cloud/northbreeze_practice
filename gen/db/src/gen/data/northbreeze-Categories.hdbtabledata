@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "NORTHBREEZE_CATEGORIES",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "northbreeze-Categories.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "CATEGORYID",
+          "CATEGORYNAME",
+          "DESCRIPTION"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "CATEGORYID": "CategoryID",
+        "CATEGORYNAME": "CategoryName",
+        "DESCRIPTION": "Description"
+      }
+    }
+  ]
+}

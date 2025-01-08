@@ -1,0 +1,9 @@
+COLUMN TABLE northbreeze_Products (
+  ProductID INTEGER NOT NULL,
+  ProductName NVARCHAR(5000),
+  UnitsInStock INTEGER,
+  Category_CategoryID INTEGER,
+  PRIMARY KEY(ProductID)
+) WITH ASSOCIATIONS (
+  MANY TO ONE JOIN northbreeze_Categories AS Category ON (Category.CategoryID = Category_CategoryID)
+)

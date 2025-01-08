@@ -1,0 +1,8 @@
+VIEW Main_Categories AS SELECT
+  Categories_0.CategoryID,
+  Categories_0.CategoryName,
+  Categories_0.Description
+FROM northbreeze_Categories AS Categories_0
+WITH ASSOCIATIONS (
+  MANY TO MANY JOIN Main_Products AS Products ON (Products.Category_CategoryID = CategoryID)
+)

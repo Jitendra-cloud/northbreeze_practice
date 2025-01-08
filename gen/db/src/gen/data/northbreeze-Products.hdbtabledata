@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "NORTHBREEZE_PRODUCTS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "northbreeze-Products.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "PRODUCTID",
+          "CATEGORY_CATEGORYID",
+          "PRODUCTNAME",
+          "UNITSINSTOCK"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "PRODUCTID": "ProductID",
+        "CATEGORY_CATEGORYID": "Category_CategoryID",
+        "PRODUCTNAME": "ProductName",
+        "UNITSINSTOCK": "UnitsInStock"
+      }
+    }
+  ]
+}
